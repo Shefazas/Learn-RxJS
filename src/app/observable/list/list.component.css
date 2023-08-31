@@ -1,0 +1,15 @@
+.bgColor{
+    background-color: aliceblue;
+}
+
+.h-100 {
+    height: 172%!important;
+}
+
+.card:hover {
+    background-color: #b5d6f8;
+  }
+  
+.align{
+    margin-top: 60px;
+}

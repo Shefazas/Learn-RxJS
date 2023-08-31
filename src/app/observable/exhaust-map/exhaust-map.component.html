@@ -1,0 +1,31 @@
+<div class="my-3 mx-4">
+    <h2 class="mx-4">Exhaust Map</h2>
+    <br>
+
+
+    <div class="row">
+        <div class="col-md-5 mr-auto">
+            <div class="row justify-content-center">
+                <div class="col-md-12">
+                    <button #btn class="btn btn-success">Save</button>&nbsp;
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div *ngIf="fetching" class="text-center">
+                <div class="spinner-border text-warning">
+                    <span class="sr-only">
+                        Loading...
+                    </span>
+                </div>Saving ...
+            </div>
+
+            <ul class="video-list">
+                <li><strong>Save Request: </strong> {{getData}}</li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>

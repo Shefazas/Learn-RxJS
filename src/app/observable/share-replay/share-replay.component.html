@@ -1,0 +1,42 @@
+<div class="my-3 mx-4">
+    <h2 class="mx-4">Share Replay</h2>
+    <br>
+<div class="row">
+    <div class="col-md-6">
+        <strong>Products : <span class="text-warning">Laptop</span></strong>
+        <hr>
+    </div>
+
+    <div class="col-md-6">
+        <strong>Products : <span class="text-warning">Mobile</span></strong>
+        <hr>
+        <div class="row">
+        <div class="card" *ngFor="let item of data2 | async" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">{{item.title}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{item.id}}</h6>
+              <p class="card-text">{{item.body}}</p>
+       
+            </div>
+          </div>
+          </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-md-12">
+        <strong>All Products : <span class="text-warning">All Products</span></strong>
+        <hr>
+    </div>
+            <div class="card" *ngFor="let item of allData | async" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{item.title}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">{{item.id}}</h6>
+                  <p class="card-text">{{item.body}}</p>
+           
+                </div>
+              </div>
+       
+        </div>
+    </div>
+    
